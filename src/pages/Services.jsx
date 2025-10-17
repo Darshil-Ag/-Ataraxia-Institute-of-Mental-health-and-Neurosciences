@@ -19,7 +19,7 @@ import {
   Shield,
   Award
 } from 'lucide-react'
-import logo from '../photo/logo.png'
+import transparentLogo from '../photo/transparent_logo.png'
 
 const Services = () => {
   const { serviceName } = useParams()

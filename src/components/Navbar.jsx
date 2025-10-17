@@ -45,7 +45,7 @@ const Navbar = () => {
                   AIMAN
                 </span>
                 <span className="text-xs text-gray-500 font-medium block max-w-48">
-                  Ataraxia Institute of Mental health and Neurosciences
+                  Ataraxia Institute of Mental Health and Neurosciences
                 </span>
               </div>
             </Link>

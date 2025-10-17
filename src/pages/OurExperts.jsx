@@ -21,7 +21,7 @@ import {
   Filter,
   Search
 } from 'lucide-react'
-import logo from '../photo/logo.png'
+import transparentLogo from '../photo/transparent_logo.png'
 import adityaImg from '../photo/aditya.jpg'
 import akshitaImg from '../photo/akshita.jpg'
 import keshavImg from '../photo/keshav.jpg'
@@ -40,7 +40,7 @@ const OurExperts = () => {
       email: 'piyush.verma@aimanhospital.com',
       phone: '+91 98765 43210',
       qualifications: 'MBBS, MD (Psychiatry), PGDMLE',
-      description: 'Dr Piyush believe that mental health is for all. As a psychiatrist of more than 11 years of clinical expertise, he has deep compassion to support individuals and their family through their mental health journey. With academic training and experience from PGIMER Rohtak, Dr Piyush integrates latest scientific findings into everyday psychiatry practice. He is also passionate about raising awareness around mental health and reducing stigma.',
+      description: 'Dr Piyush believes that mental health is for all. As a psychiatrist with more than 11 years of clinical expertise, he has deep compassion to support individuals and their family through their mental health journey. With academic training and experience from PGIMER Rohtak, Dr Piyush integrates latest scientific findings into his every day psychiatry practice. He actively contributes to ongoing research and medical education. Dr Piyush is also dedicated about raising awareness around mental health and reducing stigma.',
       image: piyushImg,
       available: true
     },
@@ -49,10 +49,10 @@ const OurExperts = () => {
       name: 'Dr Sangeeta Hatila', 
       specialty: 'Consultant Psychiatrist', 
       experience: '8+ years', 
-      email: 'sangeetha.hatila@aimanhospital.com',
+      email: 'sangeeta.hatila@aimanhospital.com',
       phone: '+91 98765 43211',
       qualifications: 'MBBS, MD (Psychiatry)',
-      description: 'Dr Sangeeta is dedicated and compassionate psychiatrist with 8 years of extensive experience in diagnosing and treating wide range of mental health conditions. After her MBBS, she did her MD psychiatry from SMS Medical college. She also served as assistant professor in SPMC, Bikaner which equipped her with comprehensive knowledge and skills to deliver high quality care. Dr Sangeeta communicate fluently in English, Hindi allowing her to engage effectively with diverse patient population.',
+      description: 'Dr Sangeeta is a dedicated and compassionate psychiatrist with 8 years of extensive experience in diagnosing and treating a wide range of mental health conditions. After her MBBS, she did her MD psychiatry from SMS Medical college. She has also served as assistant professor in SPMC, Bikaner which equipped her with comprehensive knowledge and skills to deliver high quality care. She has a number of publications and academics paper throughout her career. Dr Sangeeta communicates fluently in English, Hindi allowing her to engage effectively with the diverse patient population.',
       image: sangeethaImg,
       available: true
     },
@@ -64,7 +64,7 @@ const OurExperts = () => {
       email: 'aditya.sharma@aimanhospital.com',
       phone: '+91 98765 43212',
       qualifications: 'MBBS, MD (Psychiatry)',
-      description: 'Dr Aditya is consultant psychiatrist with strong background in clinical psychiatry and mental health advocacy. After doing his MD from SMS medical college, Dr Aditya had experience of working in IHBAS, Delhi. With over 5 years of experiences he has worked with diverse patient population addressing range of psychiatric disorders. Dr Aditya is actively involved in medical education and academic research.',
+      description: 'Dr Aditya is a consultant psychiatrist with a strong background in clinical psychiatry and mental health advocacy. After doing his MD from SMS medical college, he had the experience of working in IHBAS, Delhi. With over 5 years of experience, he has worked with a diverse patient population addressing a range of psychiatric disorders. Dr Aditya is actively involved in medical education and academic research.',
       image: adityaImg,
       available: true
     },
@@ -133,7 +133,7 @@ const OurExperts = () => {
     <div className="pt-20 lg:pt-24 relative">
       {/* Logo Background Watermark */}
       <div className="fixed top-16 left-0 right-0 bottom-0 flex items-center justify-center pointer-events-none opacity-10 z-0">
-        <img src={logo} alt="AIMAN logo" className="w-96 h-auto" />
+        <img src={transparentLogo} alt="AIMAN logo" className="w-96 h-auto" />
       </div>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-700 text-white">
@@ -241,7 +241,7 @@ const OurExperts = () => {
                   </Link>
                   <Link to="/appointment" className="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold flex items-center justify-center text-sm sm:text-base py-3 sm:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform">
                     <Calendar className="w-4 h-4 mr-2" />
-                    Book with {doctor.id === 'akshita' || doctor.id === 'keshav' ? 'Ms.' : 'Dr.'} {doctor.name.split(' ')[1]}
+                    Book with {doctor.id === 'akshita' || doctor.id === 'keshav' ? 'Ms' : 'Dr'} {doctor.name.split(' ')[1]}
                   </Link>
                   {!doctor.available && (
                     <div className="text-center text-xs sm:text-sm text-red-600 bg-red-50 px-3 py-2 rounded-lg">

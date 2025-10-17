@@ -64,7 +64,7 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               <p className="text-[#3C467B] text-sm sm:text-base leading-relaxed">
-                Ataraxia Institute of Mental health and Neurosciences
+                Ataraxia Institute of Mental Health and Neurosciences
               </p>
               <p className="text-[#3C467B] text-xs sm:text-sm leading-relaxed italic">
                 "We don't just provide treatment. We provide hope, voice, safe space, and healing."

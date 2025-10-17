@@ -19,7 +19,7 @@ import {
   Building,
   MapPin as MapPinIcon
 } from 'lucide-react'
-import logo from '../photo/logo.png'
+import transparentLogo from '../photo/transparent_logo.png'
 
 const ServiceDetail = () => {
   const { serviceName } = useParams()

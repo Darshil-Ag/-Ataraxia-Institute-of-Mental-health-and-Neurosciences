@@ -1,14 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FileText, Shield, AlertCircle, CheckCircle, Clock, Users, Phone, Mail } from 'lucide-react'
-import logo from '../photo/logo.png'
+import transparentLogo from '../photo/transparent_logo.png'
 
 const TermsOfService = () => {
   return (
     <div className="pt-16 relative">
       {/* Logo Background Watermark */}
       <div className="fixed top-16 left-0 right-0 bottom-0 flex items-center justify-center pointer-events-none opacity-10 z-0">
-        <img src={logo} alt="AIMAN logo" className="w-96 h-auto" />
+        <img src={transparentLogo} alt="AIMAN logo" className="w-96 h-auto" />
       </div>
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-700 text-white">

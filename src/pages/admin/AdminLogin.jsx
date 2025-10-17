@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useAdmin } from '../../contexts/AdminContext'
 import { Lock, User, AlertCircle, Eye, EyeOff } from 'lucide-react'
-import logo from '../../photo/logo.png'
+import transparentLogo from '../../photo/transparent_logo.png'
 
 const AdminLogin = () => {
   const [username, setUsername] = useState('')
