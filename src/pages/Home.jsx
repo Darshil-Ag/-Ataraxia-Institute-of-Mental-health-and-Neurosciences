@@ -351,7 +351,7 @@ const Home = () => {
                   to="/appointment"
                   className="btn-primary w-full"
                 >
-                  Book with Dr. {doctor.name.split(' ')[1]}
+                  Book with {doctor.name.startsWith('Ms') ? 'Ms' : 'Dr'} {doctor.name.split(' ')[1]}
                 </Link>
               </motion.div>
             ))}
