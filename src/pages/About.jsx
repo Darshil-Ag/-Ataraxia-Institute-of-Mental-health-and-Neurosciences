@@ -17,9 +17,9 @@ import {
 import transparentLogo from '../photo/transparent_logo.png'
 
 // Content from content folder
-const objective = "To provide comprehensive, high-quality healthcare services that improve the health and well-being of our community through compassionate care, advanced technology, and continuous innovation. We are committed to delivering exceptional medical services with integrity, excellence, and patient-centered care."
+const objective = "At AIMAN, we believe that mental health is just as important as physical health. we are committed to providing compassionate, confidential, and comprehensive care to individuals and families facing emotional and psychological challenges. Our team of experienced psychiatrists, psychologists, therapists, and support staff are here to support you every step of the way — with empathy, respect, and evidence-based treatment tailored to your unique needs. Whether you're seeking help for anxiety, depression, stress, addiction, or any other mental health concern, you've taken a brave step by being here. You are not alone — and recovery is possible. Welcome to a safe space. Welcome to hope. Welcome to healing."
 
-const vision = "To be the leading healthcare provider in the region, recognized for excellence in patient care, medical innovation, and community health improvement. We envision a future where every patient receives world-class healthcare services delivered with compassion, expertise, and cutting-edge technology."
+const vision = "At AIMAN, we believe that mental health is a right, not a privilege. Our mission is to make quality mental health care accessible to everyone—We are dedicated to breaking barriers of cost, stigma, and accessibility by offering compassionate, professional, and inclusive services that truly put people first. Because mental well-being should not depend on status—it should belong to all."
 
 const slogan = "Mental Health For All"
 
@@ -129,9 +129,6 @@ const About = () => {
             </h1>
             <p className="text-xl md:text-2xl text-purple-100 max-w-4xl mx-auto mb-4">
               {slogan}
-            </p>
-            <p className="text-lg text-purple-200 max-w-4xl mx-auto">
-              At AIMAN, we don't just provide treatment. We provide hope. We provide a voice. We provide a safe space. Most importantly, we provide healing.
             </p>
           </motion.div>
         </div>
@@ -256,70 +253,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Values */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <div className="w-20 h-20 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="w-10 h-10 text-secondary-600" />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3C467B] mb-6">Our Values</h2>
-            <p className="text-xl text-[#3C467B] max-w-4xl mx-auto mb-12 leading-relaxed">
-              Compassion, Excellence, Integrity, and Innovation guide everything we do. 
-              These core values shape our culture and drive our commitment to providing 
-              exceptional healthcare services.
-            </p>
-          </motion.div>
-
-          {/* Values with illustrations */}
-          <div className="space-y-16">
-            {values.map((value, index) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}
-              >
-                {/* Illustration Side */}
-                <div className="lg:w-1/2 flex justify-center">
-                  <div className="relative">
-                    {/* Background circle */}
-                    <div className="w-64 h-64 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-full flex items-center justify-center">
-                      {/* Medical illustration placeholder */}
-                      <div className="w-48 h-48 bg-white rounded-full shadow-lg flex items-center justify-center">
-                        {React.createElement(value.icon, { className: "w-24 h-24 text-primary-600" })}
-                      </div>
-                    </div>
-                    {/* Decorative elements */}
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary-200 rounded-full"></div>
-                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-secondary-200 rounded-full"></div>
-                  </div>
-                </div>
-
-                {/* Text Side */}
-                <div className="lg:w-1/2">
-                  <div className="max-w-lg">
-                    <h3 className="text-3xl font-bold text-[#3C467B] mb-4">
-                      {value.title}
-                    </h3>
-                    <p className="text-lg text-[#3C467B] leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Hospital Statistics - COMMENTED OUT */}
       {/* <section className="section-padding bg-primary-50">
@@ -486,8 +419,7 @@ const About = () => {
               Experience the AIMAN Difference
             </h2>
             <p className="text-xl mb-8 text-[#3C467B] max-w-3xl mx-auto">
-              Join thousands of patients who have trusted us with their healthcare needs. 
-              Let us be your partner in health and wellness.
+              Experience the AIMAN difference in healthcare excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -58,8 +58,8 @@ const Contact = () => {
       icon: Clock,
       title: 'Operating Hours',
       details: [
-        'Outpatient: Mon-Fri 8AM-8PM',
-        'Weekend: Sat-Sun 9AM-6PM'
+        'Weekday: 10 am to 7 pm',
+        'Sunday: 10 am to 4 pm'
       ],
       color: 'from-purple-500 to-indigo-500'
     }

@@ -395,27 +395,6 @@ const DoctorProfile = () => {
                 </p>
               </motion.div>
 
-              {/* Education */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="card"
-              >
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                  <GraduationCap className="w-6 h-6 mr-3 text-primary-600" />
-                  Education & Qualifications
-                </h2>
-                <ul className="space-y-2">
-                  {doctor.education.map((edu, index) => (
-                    <li key={index} className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-600">{edu}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
 
               {/* Specializations */}
               {/* <motion.div

@@ -239,7 +239,7 @@ const OurServices = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Our Mental Health Services
+              Our Services
             </h1>
             <p className="text-xl md:text-2xl text-purple-100 max-w-4xl mx-auto">
               Comprehensive mental health services across all specialties, 
@@ -260,12 +260,6 @@ const OurServices = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3C467B] mb-4">
-              All Mental Health Services
-            </h2>
-            <p className="text-xl text-[#3C467B] max-w-3xl mx-auto">
-              {services.length} mental health service{services.length !== 1 ? 's' : ''} available
-            </p>
           </motion.div>
 
           <div className="space-y-8">

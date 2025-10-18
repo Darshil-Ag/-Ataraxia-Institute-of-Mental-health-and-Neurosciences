@@ -411,13 +411,6 @@ const ServiceDetail = () => {
         
         <div className="relative z-10 container-custom">
           <div className="flex flex-col lg:flex-row items-center gap-8">
-            {/* Service Icon */}
-            <div className="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white flex items-center justify-center">
-              <div className={`w-full h-full bg-gradient-to-r ${service.color} rounded-full flex items-center justify-center`}>
-                {React.createElement(service.icon, { className: "w-16 h-16 lg:w-24 lg:h-24 text-white" })}
-              </div>
-            </div>
-            
             {/* Service Info */}
             <div className="text-center lg:text-left flex-1">
               <motion.div
