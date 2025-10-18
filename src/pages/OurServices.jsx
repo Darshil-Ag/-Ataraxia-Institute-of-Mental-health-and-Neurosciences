@@ -273,17 +273,8 @@ const OurServices = () => {
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
                 <div className="flex flex-col lg:flex-row">
-                  {/* Service Image */}
-                  <div className="lg:w-1/3 h-64 lg:h-auto">
-                    <img
-                      src={service.image}
-                      alt={service.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-
                   {/* Service Content */}
-                  <div className="lg:w-2/3 p-8">
+                  <div className="w-full p-8">
                     <div className="flex items-start space-x-4 mb-6">
                       <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
                         {React.createElement(service.icon, { className: "w-8 h-8 text-white" })}

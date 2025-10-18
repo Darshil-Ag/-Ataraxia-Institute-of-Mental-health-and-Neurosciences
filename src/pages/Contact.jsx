@@ -420,7 +420,7 @@ Thank you!`
                 </h3>
                 <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuMiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3508.3585056289257!2d77.0511222!3d28.4386074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194351c6b57b%3A0x18d58b3633d7a68c!2sAIMAN%20-%20Ataraxia%20Institute%20of%20Mental%20Health%20%26%20Neurosciences!5e0!3m2!1sen!2sin!4v1760792916853!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -439,7 +439,7 @@ Thank you!`
                   <p className="text-sm text-primary-700 mb-3">
                   83P , Residency Green, Jal Vihar Colony, Sector 46, Gurgaon, Haryana 122003             </p>
                   <a
-                    href="https://maps.app.goo.gl/KUSokbpUDrfc71X96"
+                    href="https://maps.app.goo.gl/q7XyStX728nxmf1N7"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200"
