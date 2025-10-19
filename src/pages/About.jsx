@@ -17,7 +17,11 @@ import {
 import transparentLogo from '../photo/transparent_logo.png'
 
 // Content from content folder
-const objective = "At AIMAN, we believe that mental health is just as important as physical health. we are committed to providing compassionate, confidential, and comprehensive care to individuals and families facing emotional and psychological challenges. Our team of experienced psychiatrists, psychologists, therapists, and support staff are here to support you every step of the way with empathy, respect, and evidence-based treatment tailored to your unique needs. Whether you're seeking help for anxiety, depression, stress, addiction, or any other mental health concern, you've taken a brave step by being here. You are not alone and recovery is possible. Welcome to a safe space. Welcome to hope. Welcome to healing."
+const objective = {
+  part1: "At AIMAN, we believe that mental health is just as important as physical health. We are committed to providing compassionate, confidential, and comprehensive care to individuals and families facing emotional and psychological challenges.",
+  part2: "Our team of experienced psychiatrists, psychologists, therapists, and support staff are here to support you every step of the way with empathy, respect, and evidence-based treatment tailored to your unique needs.",
+  part3: "Whether you're seeking help for anxiety, depression, stress, addiction, or any other mental health concern, you've taken a brave step by being here. You are not alone and recovery is possible. Welcome to a safe space. Welcome to hope. Welcome to healing."
+}
 
 const vision = "At AIMAN, we believe that mental health is a right, not a privilege. Our mission is to make quality mental health care accessible to everyone. We are dedicated to breaking barriers of cost, stigma, and accessibility by offering compassionate, professional, and inclusive services that truly put people first. Because mental well-being should not depend on status, it should belong to all."
 
@@ -135,7 +139,7 @@ const About = () => {
       </section>
 
       {/* Our Mission */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-primary-100">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -147,46 +151,139 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-[#3C467B] mb-6">Our Mission</h2>
           </motion.div>
 
-          <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Illustration Side */}
-            <div className="lg:w-1/2 flex justify-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex justify-center lg:justify-end"
+            >
               <div className="relative">
-                {/* Hexagonal design for mission */}
-                <div className="w-80 h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl flex items-center justify-center transform rotate-12">
-                  <div className="w-64 h-64 bg-white rounded-2xl shadow-xl flex items-center justify-center transform -rotate-12">
-                    <div className="text-center">
-                      <Target className="w-20 h-20 text-primary-600 mx-auto mb-4" />
-                      <div className="w-16 h-1 bg-primary-300 mx-auto mb-2"></div>
-                      <div className="w-12 h-1 bg-primary-200 mx-auto"></div>
+                {/* Premium illustration design */}
+                <div className="w-96 h-96 bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-3xl flex items-center justify-center shadow-2xl border border-secondary-200">
+                  <div className="w-80 h-80 bg-white rounded-2xl shadow-xl flex items-center justify-center border border-secondary-100">
+                    <div className="text-center p-8">
+                      <div className="w-24 h-24 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <Heart className="w-12 h-12 text-white" />
+                      </div>
+                      <h4 className="text-2xl font-bold text-secondary-800 mb-3">Our Mission</h4>
+                      <p className="text-secondary-600 font-medium">Healthcare Excellence</p>
+                      <div className="mt-6 flex justify-center space-x-2">
+                        <div className="w-3 h-3 bg-secondary-400 rounded-full"></div>
+                        <div className="w-3 h-3 bg-secondary-300 rounded-full"></div>
+                        <div className="w-3 h-3 bg-secondary-200 rounded-full"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute -top-6 -right-6 w-12 h-12 bg-primary-300 rounded-full opacity-60"></div>
-                <div className="absolute -bottom-6 -left-6 w-8 h-8 bg-secondary-300 rounded-full opacity-60"></div>
-                <div className="absolute top-1/2 -right-8 w-6 h-6 bg-primary-400 rounded-full opacity-40"></div>
+                <div className="absolute -top-6 -right-6 w-16 h-16 bg-secondary-200 rounded-full opacity-60"></div>
+                <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-secondary-300 rounded-full opacity-40"></div>
+                <div className="absolute top-1/2 -left-8 w-8 h-8 bg-secondary-100 rounded-full"></div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Text Side */}
-            <div className="lg:w-1/2">
-              <div className="max-w-2xl">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mr-4">
-                    <Target className="w-6 h-6 text-white" />
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div className="space-y-6">
+                <div className="flex items-center mb-8">
+                  <div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-secondary-500 to-secondary-300 rounded-full"></div>
                   </div>
-                  <h3 className="text-3xl font-bold text-[#3C467B]">Our Mission</h3>
                 </div>
-                <p className="text-lg text-[#3C467B] leading-relaxed">
-                  {objective}
-                </p>
-                <div className="mt-8 flex items-center space-x-4">
-                  <div className="w-8 h-1 bg-primary-600"></div>
-                  <div className="w-6 h-1 bg-primary-400"></div>
-                  <div className="w-4 h-1 bg-primary-300"></div>
+
+                {/* Mission Content Cards */}
+                <div className="space-y-6">
+                  {/* Part 1 - Core Belief */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="p-6 bg-gradient-to-r from-secondary-50 to-white rounded-2xl border border-secondary-100 shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-secondary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-bold text-[#3C467B] mb-3">Our Core Belief</h4>
+                        <p className="text-lg text-[#3C467B] leading-relaxed">
+                          {objective.part1}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Part 2 - Team Approach */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    viewport={{ once: true }}
+                    className="p-6 bg-gradient-to-r from-secondary-50 to-white rounded-2xl border border-secondary-100 shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-secondary-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Users className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-bold text-[#3C467B] mb-3">Our Team Approach</h4>
+                        <p className="text-lg text-[#3C467B] leading-relaxed">
+                          {objective.part2}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Part 3 - Support & Hope */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    viewport={{ once: true }}
+                    className="p-6 bg-gradient-to-r from-secondary-50 to-white rounded-2xl border border-secondary-100 shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-secondary-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Shield className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-bold text-[#3C467B] mb-3">Support & Hope</h4>
+                        <p className="text-lg text-[#3C467B] leading-relaxed">
+                          {objective.part3}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
                 </div>
+
+                {/* CTA Button */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  className="pt-6"
+                >
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-secondary-600 to-secondary-700 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl hover:from-secondary-700 hover:to-secondary-800 transition-all duration-300 transform hover:-translate-y-1"
+                  >
+                    <Heart className="w-5 h-5 mr-3" />
+                    Contact Us
+                  </a>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
